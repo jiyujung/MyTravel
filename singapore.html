@@ -1,0 +1,285 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>싱가포르</title>
+        <script src="js/singapore.js"></script>
+        <script src="js/clock.js"></script>
+        <link rel="stylesheet" href="css/menu.css">
+        <link rel="stylesheet" href="css/country.css">
+        <link rel="stylesheet" href="css/info.css">
+        <link rel="stylesheet" href="css/accordion.css">
+    </head>
+    <body>
+        <font size=5><p align=center><a href="index.html" class="travel">My travel</a></p></font>
+        <div class='menu'>
+          <ul>
+            <li class='active sub'>
+              <a href='#'>동아시아</a>
+              <ul>
+                <li class='sub'>
+                  <a href="japan.html">일본</a>
+                  <ul>
+                    <li><a href='tokyo.html'>도쿄</a></li>
+                    <li><a href='osaka.html'>오사카</a></li>
+                    <li><a href='kyoto.html'>교토</a></li>
+                    <li><a href='nara.html'>나라</a></li>
+                    <li><a href='kobe.html'>고베</a></li>
+                  </ul>
+                </li>
+                <li class='sub'>
+                  <a href='china.html'>중화인민공화국(중국)</a>
+                  <ul>
+                    <li><a href='shanghai.html'>상하이</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class='active sub'>
+              <a href='#'>동남아시아</a>
+              <ul>
+                <li class='sub'>
+                  <a href='malaysia.html'>말레이시아</a>
+                  <ul>
+                    <li><a href='kualaLumpur.html'>쿠알라룸푸르</a></li>
+                    <li><a href='melaka.html'>말라카</a></li>
+                  </ul>
+                </li>
+                <li class='sub'>
+                  <a href='philippines.html'>필리핀</a>
+                  <ul>
+                    <li><a href='cebu.html'>세부</a></li>
+                  </ul>
+                </li>
+                <li><a href='singapore.html'>싱가포르</a></li>
+                <li class='sub'>
+                  <a href='thailand.html'>태국</a>
+                  <ul>
+                    <li><a href='bangkok.html'>방콕</a></li>
+                    <li><a href='krabi.html'>끄라비</a></li>
+                  </ul>
+                </li>
+                <li class='sub'>
+                  <a href='vietnam.html'>베트남</a>
+                  <ul>
+                    <li><a href='hanoi.html'>하노이</a></li>
+                    <li><a href='danang.html'>다낭</a></li>
+                    <li><a href='hoian.html'>호이안</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class='active sub'>
+              <a href='#'>동유럽</a>
+              <ul>
+                <li class='sub'>
+                  <a href='czechRepublic.html'>체코</a>
+                  <ul>
+                    <li><a href='praha.html'>프라하</a></li>
+                    <li><a href='kutnahora.html'>쿠트나호라</a></li>
+                  </ul>
+                </li>
+                <li class='sub'>
+                  <a href='hungary.html'>헝가리</a>
+                  <ul>
+                    <li><a href='budapest.html'>부다페스트</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class='active sub'>
+              <a href='#'>서유럽</a>
+              <ul>
+                <li class='sub'>
+                  <a href='austria.html'>오스트리아</a>
+                  <ul>
+                    <li><a href='vienna.html'>비엔나</a></li>
+                    <li><a href='salzburg.html'>잘츠부르크</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class='active sub'>
+              <a href='#'>오세아니아</a>
+              <ul>
+                <li><a href='guam.html'>괌</a></li>
+              </ul>
+            </li>
+            <li class='active sub'>
+              <a href='#'>기타</a>
+              <ul>
+                <li><a href='hongkong.html'>홍콩</a></li>
+                <li><a href='macau.html'>마카오</a></li>
+                <li class='sub'>
+                  <a href='indonesia.html'>인도네시아</a>
+                  <ul>
+                      <li><a href='bali.html'>발리</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href='picture.html'>사진첩</a>
+            </li>
+          </ul>
+        </div>
+
+        <center>
+        <table>
+          <tr>
+            <td colspan="2"><font size=5>싱가포르</font></td>
+          </tr>
+          <tr>
+            <td><img src="img/esAsia/singapore/flag.png" class="img" hspace=30px></td>
+            <td>
+              <font size=4>현재시간:<script>document.write(getWorldTime(+8));</script><p>
+              시차:1시간 빠름<p>
+              수도:싱가포르<p>
+              공용어:영어, 말레이어(국민어), 표준 중국어, 타밀어<p>
+              인구:약 567만 명<p>
+              종교:다종교(불교, 이슬람교, 힌두교 등)<p>
+              전압:220~240V, 50Hz(3핀)<p>
+              통화단위:싱가포르 달러(SGD)<p>
+              <form name="cal">
+                  화폐계산: <input type="text" name="money" size=5>싱가포르 달러(SGD) * 860 
+                  <input type="button" value="=" onClick="calNow()">
+                  <input type="text" name="result_multiply" size=7 readonly>원 <!--readonly:읽기 전용 속성-->
+              </form>
+            </font>
+            </td>
+          </tr>
+        </table>         
+        <hr class="line">
+        <button class="accordion">기후</button>
+        <div class="panel">
+          <p>고온다습한 열대성 기후로 연중 무더운 날씨가 지속<p>
+          연평균 최고기온은 31℃, 연평균 최저기온은 24.1℃, 연평균강우량은 2,346mm 정도<p>
+          11~1월은 몬순 기후로서 비가 자주 오고 기온이 2~3℃정도 낮아짐<p>
+          낮에는 햇볕이 매우 강하므로 야외활동 시, 자외선차단제 사용은 필수적임<p>
+          <table border class="singaporeweather">
+            <tr>
+              <td></td>
+              <td>1월</td>
+              <td>2월</td>
+              <td>3월</td>
+              <td>4월</td>
+              <td>5월</td>
+              <td>6월</td>
+              <td>7월</td>
+              <td>8월</td>
+              <td>9월</td>
+              <td>10월</td>
+              <td>11월</td>
+              <td>12월</td>
+            </tr>
+            <tr>
+              <td>평균 기온 (°C)</td>
+              <td>26.1</td>
+              <td>26.6</td>
+              <td>26.9</td>
+              <td>27.2</td>
+              <td>27.4</td>
+              <td>27.3</td>
+              <td>27.1</td>
+              <td>26.9</td>
+              <td>26.9</td>
+              <td>27</td>
+              <td>26.6</td>
+              <td>26.1</td>
+            </tr>
+            <tr>
+              <td>최소 온도 (°C)</td>
+              <td>22.3</td>
+              <td>22.6</td>
+              <td>22.8</td>
+              <td>23.2</td>
+              <td>23.6</td>
+              <td>23.6</td>
+              <td>23.3</td>
+              <td>23.2</td>
+              <td>23.1</td>
+              <td>23</td>
+              <td>22.8</td>
+              <td>22.5</td>
+            </tr>
+            <tr>
+              <td>최고 온도 (°C)</td>
+              <td>29.9</td>
+              <td>30.6</td>
+              <td>31.1</td>
+              <td>31.3</td>
+              <td>31.3</td>
+              <td>31.1</td>
+              <td>30.9</td>
+              <td>30.7</td>
+              <td>30.8</td>
+              <td>31</td>
+              <td>30.4</td>
+              <td>29.7</td>
+            </tr>
+            <tr>
+              <td>강수량 (mm)	</td>
+              <td>250</td>
+              <td>166</td>
+              <td>181</td>
+              <td>187</td>
+              <td>166</td>
+              <td>164</td>
+              <td>166</td>
+              <td>180</td>
+              <td>163</td>
+              <td>195</td>
+              <td>262</td>
+              <td>298</td>
+            </tr>
+          </table>
+        </div>
+        <button class="accordion">긴급시</button>
+        <div class="panel">
+          <p>경찰 999<br>
+          구급, 소방 995
+        </div>
+        <button class="accordion">음주, 흡연</button>
+        <div class="panel">
+          <p>오후 10시 30분부터 다음날 오전 7시까지는 술 판매가 제한되며 지정된 장소에서만 마셔야 함<p>
+          또한 게일랑과 리틀 인디아에서는 주말과 공휴일에는 음주가 제한됨<p>
+          주류 구입시간 역시 오후 8시부터 제한됨<p>
+          위반 시 벌금 1000싱가포르 달러. 2회 적발시 2000싱가포르 달러
+        </div>
+        <button class="accordion">교통</button>
+        <div class="panel">
+          <p><font size=4>지하철(MRT)</font><p>
+          싱가포르에 오면 가장 많이 이용<p>
+          영어/중국어/말레이시아어/인도어가 표시되어 있으며,<br>
+          안내표기가 잘 되어있어서 환승하거나 이용하기 매우 편리<p>
+          지하철비는 한국이랑 거의 비슷하거나 조금 더 높음<p><br><br>
+          <font size=4>버스</font><p>
+          알면 쉽지만, 모르면 어려움<p>
+          일단 안내방송이 안나오기때문에 정확한 목적지에 잘 알고 내려야함<p>
+          타기전에는 꼭 운전기사분께 목적지로 가는 버스인지 확인한 후 탑승하는것이 좋음<p>
+          버스비는 한국과 거의 동일<p><br><br>
+          <font size=4>택시</font><p>
+          싱가폴의 모든 택시는 미터기를 사용<p>
+          요금은 보통 $3.00~$3.40 부터 시작하고 거리에 따라 시간대에 따라 추가요금이 발생<p>
+          결제는 현금, 신용카드, 이지링크, 넷츠 카드로 가능<p>
+          피크타임 추가 요금 발생 시간<br>
+          월~금 (6:00am ~ 9:30am) - 25%<br>
+          월~일 (6:00pm ~ 12am) - 25%<br>
+          월~일 (12am ~ 6am) - 50%<p><br><br>
+          <font size=4>버스나 지하철, 대중교통 이용 여행객들에게 드리는 TIP<p>
+          티켓 구매<p>
+          1회 이용권 (Standard Ticket)<br></font>
+          우리나라와 같은 1회 이용권 티켓<br>
+          보증금 $1.00 가 있으며, 기계에 반납 후 에는 $1.00 돌려 받을 수 있음<p>
+          <font size=4>이지링크 카드 (Ez-Link Card)</font><br>
+          우리나라의 충전식 교통카드와 같은것으로 최소금액 $10.00에 구매가능하며,<br>
+          카드에는 플라스틱 카드비 $4를 뺀 차액이 충전되어 있음<p>
+          <font size=4>투어리스트 패스 (Singapore Tourist Pass)</font><br>
+          1일, 2일, 3일 이용권 구매 가능하며,<br>
+          보증금 $10.00는 5일이내 반납하면 돌려받을 수 있음<p>
+          1일권 : $20.00&emsp;&emsp;&emsp;2일권 : $26.00&emsp;&emsp;&emsp;3일권 : $30.00
+        </div>
+
+        <script src="js/accordion.js"></script>
+        <a class="a" href="#" title="맨위로"><img src="img/use/up.png"></a>
+    </body>
+</html>

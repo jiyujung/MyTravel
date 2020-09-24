@@ -1,0 +1,359 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>일본</title>
+        <script src="js/japan.js"></script>
+        <link rel="stylesheet" href="css/menu.css">
+        <link rel="stylesheet" href="css/country.css">
+        <link rel="stylesheet" href="css/info.css">
+        <link rel="stylesheet" href="css/accordion.css">
+    </head>
+    <body>
+        <font size=5><p align=center><a href="index.html" class="travel">My travel</a></p></font>
+        <div class='menu'>
+            <ul>
+            <li class='active sub'>
+                <a href='#'>동아시아</a>
+                <ul>
+                    <li class='sub'>
+                        <a href="japan.html">일본</a>
+                        <ul>
+                            <li><a href='tokyo.html'>도쿄</a></li>
+                            <li><a href='osaka.html'>오사카</a></li>
+                            <li><a href='kyoto.html'>교토</a></li>
+                            <li><a href='nara.html'>나라</a></li>
+                            <li><a href='kobe.html'>고베</a></li>
+                        </ul>
+                    </li>
+                    <li class='sub'>
+                        <a href='china.html'>중화인민공화국(중국)</a>
+                        <ul>
+                            <li><a href='shanghai.html'>상하이</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class='active sub'>
+                <a href='#'>동남아시아</a>
+                <ul>
+                    <li class='sub'>
+                        <a href='malaysia.html'>말레이시아</a>
+                        <ul>
+                            <li><a href='kualaLumpur.html'>쿠알라룸푸르</a></li>
+                            <li><a href='melaka.html'>말라카</a></li>
+                        </ul>
+                    </li>
+                    <li class='sub'>
+                        <a href='philippines.html'>필리핀</a>
+                        <ul>
+                            <li><a href='cebu.html'>세부</a></li>
+                        </ul>
+                    </li>
+                    <li><a href='singapore.html'>싱가포르</a></li>
+                    <li class='sub'>
+                        <a href='thailand.html'>태국</a>
+                        <ul>
+                            <li><a href='bangkok.html'>방콕</a></li>
+                            <li><a href='krabi.html'>끄라비</a></li>
+                        </ul>
+                    </li>
+                    <li class='sub'>
+                        <a href='vietnam.html'>베트남</a>
+                        <ul>
+                            <li><a href='hanoi.html'>하노이</a></li>
+                            <li><a href='danang.html'>다낭</a></li>
+                            <li><a href='hoian.html'>호이안</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class='active sub'>
+                <a href='#'>동유럽</a>
+                <ul>
+                    <li class='sub'>
+                        <a href='czechRepublic.html'>체코</a>
+                        <ul>
+                            <li><a href='praha.html'>프라하</a></li>
+                            <li><a href='kutnahora.html'>쿠트나호라</a></li>
+                        </ul>
+                    </li>
+                    <li class='sub'>
+                        <a href='hungary.html'>헝가리</a>
+                        <ul>
+                            <li><a href='budapest.html'>부다페스트</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class='active sub'>
+                <a href='#'>서유럽</a>
+                <ul>
+                    <li class='sub'>
+                        <a href='austria.html'>오스트리아</a>
+                        <ul>
+                            <li><a href='vienna.html'>비엔나</a></li>
+                            <li><a href='salzburg.html'>잘츠부르크</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class='active sub'>
+                <a href='#'>오세아니아</a>
+                <ul>
+                    <li><a href='guam.html'>괌</a></li>
+                </ul>
+            </li>
+            <li class='active sub'>
+                <a href='#'>기타</a>
+                <ul>
+                    <li><a href='hongkong.html'>홍콩</a></li>
+                    <li><a href='macau.html'>마카오</a></li>
+                    <li class='sub'>
+                        <a href='indonesia.html'>인도네시아</a>
+                        <ul>
+                            <li><a href='bali.html'>발리</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href='picture.html'>사진첩</a>
+            </li>
+        </ul>
+    </div>
+
+    <center>
+    <table>
+        <tr>
+            <td colspan="2"><font size=5>일본</font></td>
+        </tr>
+        <tr>
+            <td><img src="img/eAsia/japan/flag.png" class="img" hspace=30px></td>
+            <td>
+                <font size=4>현재시간:<span id="clock"></span><p>
+                시차:없음<p>
+                수도:도쿄<p>
+                공용어:일본어<p>
+                인구:약 1억 2700만 명<p>
+                종교:대부분 불교와 신도<p>
+                전압:100V<p>
+                통화단위:엔(円)<p>
+                <form name="cal">
+                    화폐계산: <input type="text" name="money" size=5>엔(円) * 10 
+                    <input type="button" value="=" onClick="calNow()">
+                    <input type="text" name="result_multiply" size=7 readonly>원 <!--readonly:읽기 전용 속성-->
+                </form>
+                </font>
+            </td>
+        </tr>
+    </table>
+    <hr class="line">
+    <button class="accordion">기후</button>
+    <div class="panel">
+        <p>계절마다의 특징이 명확하다.<p>
+        봄<br>
+        3월에 시작하여, 꽃이 피고 날씨가 따뜻해진다.<br>의복 : 가벼운 자켓이나 스웨터 등의 상의복<p>
+        여름<br>
+        5월에서 9월초까지로 초여름은 맑고 따뜻하다.<br>
+        장마동안에는 거의 매일 비가오며, 여름내내 일본은 홋카이도를 제외하고는 기온과 습도가 높다.<br>
+        의복 : 얇은 옷(단, 냉방이 완비된 장소가 많으므로 간단하게 걸칠 수 있는 옷을 준비하면 편리하다)<p>
+        가을<br>
+        9월부터 11월까지로 가끔 비가 오지만 날씨는 점점 건조하고 서늘하며, 강풍과 태풍을 겪기도 한다.<br>
+        의복 : 가벼운 쟈켓이나 스웨터 등의 상의복<p>
+        겨울<br>
+        11월에서 2월까지로 일본북부는 시베리아 및 몽공의 차가운 바람이 불어오고,<br>
+        남부는 기온이 온화한 편이다.<br>
+        도쿄의 기온은 대체로 영하를 조금 웃도는 정도지만, 혼슈북부의 도호쿠 및 홋카이도는 매우 춥다.<br>
+        홋카이도에는 많은 양의 눈이 내린다.<br>
+        의복 : 코트, 스웨터 등<p><br><br>
+        주요 도시의 평균 기온 및 강수량<p>
+        <table border class="japanweather" >
+            <tr>
+                <td rowspan="2"></td>
+                <td colspan="2">겨울(12~2월)</td>
+                <td colspan="2">봄(3~5월)</td>
+            </tr>
+            <tr>
+                <td>기온(C)</td>
+                <td>강수량(mm)</td>
+                <td>기온(C)</td>
+                <td>강수량(mm)</td>
+            </tr>
+            <tr>
+                <td>삿포로</td>
+                <td>-3.6</td>
+                <td>113.6</td>
+                <td>7.1</td>
+                <td>57</td>
+            </tr>
+            <tr>
+                <td>센다이</td>
+                <td>1.6</td>
+                <td>37</td>
+                <td>10.3</td>
+                <td>98</td>
+            </tr>
+            <tr>
+                <td>도쿄</td>
+                <td>6.1</td>
+                <td>52</td>
+                <td>14.6</td>
+                <td>125</td>
+            </tr>
+            <tr>
+                <td>나고야</td>
+                <td>4.5</td>
+                <td>48</td>
+                <td>14.4</td>
+                <td>125</td>
+            </tr>
+            <tr>
+                <td>오사카</td>
+                <td>6</td>
+                <td>45</td>
+                <td>15.1</td>
+                <td>104</td>
+            </tr>
+            <tr>
+                <td>후쿠오카</td>
+                <td>6.6</td>
+                <td>68</td>
+                <td>15.1</td>
+                <td>117</td>
+            </tr>
+            <tr>
+                <td>나하</td>
+                <td>17</td>
+                <td>107</td>
+                <td>21.4</td>
+                <td>166</td>
+            </tr>
+            <tr>
+                <td rowspan="2"></td>
+                <td colspan="2">여름(6~8월)</td>
+                <td colspan="2">가을(9~11월)</td>
+            </tr>
+            <tr>
+                <td>기온(C)</td>
+                <td>강수량(mm)</td>
+                <td>기온(C)</td>
+                <td>강수량(mm)</td>
+            </tr>
+            <tr>
+                <td>삿포로</td>
+                <td>20.5</td>
+                <td>81</td>
+                <td>11.8</td>
+                <td>109</td>
+            </tr>
+            <tr>
+                <td>센다이</td>
+                <td>22.22</td>
+                <td>179</td>
+                <td>15.2</td>
+                <td>122</td>
+            </tr>
+            <tr>
+                <td>도쿄</td>
+                <td>25.4</td>
+                <td>154</td>
+                <td>18.5</td>
+                <td>198</td>
+            </tr>
+            <tr>
+                <td>나고야</td>
+                <td>26.4</td>
+                <td>204</td>
+                <td>18.1</td>
+                <td>128</td>
+            </tr>
+            <tr>
+                <td>오사카</td>
+                <td>27.4</td>
+                <td>157</td>
+                <td>19</td>
+                <td>112</td>
+            </tr>
+            <tr>
+                <td>후쿠오카</td>
+                <td>27.2</td>
+                <td>278</td>
+                <td>19.2</td>
+                <td>74</td>
+            </tr>
+            <tr>
+                <td>나하</td>
+                <td>28.9</td>
+                <td>141</td>
+                <td>25.2</td>
+                <td>153</td>
+            </tr>
+        </table>
+    </div>
+
+    <button class="accordion">긴급시</button>
+    <div class="panel">
+        <p> &emsp;&emsp;&emsp;경찰 110<br>
+            &emsp;&emsp;구급차 119<br>
+            &emsp;&emsp;소방차 119<br>
+            해상보안청 118<p>
+    </div>
+
+    <button class="accordion">돈</button>
+    <div class="panel">
+        <p>통화<br>
+        지폐　￥10,000 / ￥5,000 / ￥2,000 / ￥1,000<br>
+        &emsp;&emsp;&nbsp;※2000엔 지폐의 유통량은 약간 적음.<br>
+        동전　￥500 / ￥100 / ￥50 / ￥10 / ￥5 / ￥1<p><br>
+        신용카드<br>
+        주요한 브랜드는 Visa・MasterCard・American Express･JCB・Diners club, 은련 등.<br>
+        지방 등 일부 사용할 수 없는 장소도 있기 때문에, 본 사이트 등에서 확인하면 좋다.<p><br>
+        환전・ATM<br>
+        외화 환전소・호텔・은행・우체국 등에서 가능.<br>
+        환전 가능한 편의점 ATM도 증가하고 있음.
+    </div>
+
+    <button class="accordion">교통</button>
+    <div class="panel">
+        <p>택시<br>
+        요금은 2킬로미터까지 일정 요금으로 되어 있다.<br>
+        기본 요금은 도내의 경우, 730엔 정도.   ※도시에 따라 다름<p><br>
+        버스<br>
+        장거리용・근거리용 모두 발달되어 있으며, 통근・통학에도 자주 이용된다.<br>
+        단, 안내 방송 등은 일본어이기 때문에, 주의가 필요.<p><br>
+        전차<br>
+        공공 교통망으로서 매우 발달되어 있다.<br>
+        장거리 이동의 경우에는 특급 열차 또는 신칸센을 자주 이용한다.<br>
+        도시 내에서의 근거리 이동에서는 보통의 철도에 더하여, 지하철과 모노레일, 노면 전차가 달리고 있는 지역도 있다.<br>
+        최근에는 전자 카드로의 지불이 주류가 되어 있다.
+    </div>
+
+    <button class="accordion">공항</button>
+    <div class="panel">
+        <p>국제항공(동일본)    나리타 국제공항(NRT/Narita International Airport)<br>
+        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;하네다 국제공항(HND/Tokyo International Airport)<br>
+        국제항공(서일본)    간사이 국제공항(KIX/Kansai International Airport)<p><br>
+        반입 제한<br>
+        불법 약물(아편/코카인/대마 etc), 권총 등의 총포・총포탄, 외설물과 가짜 명품, 특정 식물・동물 등의 반입은 금지.<p><br>
+        면세 범위(성인 1인당)<br>
+        술：760ml 3병<br>
+        담배：궐련 담배만：400개(일본제품 200개, 외국제품 200개) 시가만 : 50개　기타: 250g<br>
+        향수：2온스(1온스＝약 28ml)
+    </div>
+
+    <button class="accordion">특이 사항</button>
+    <div class="panel">
+        <p>팁:필요 없음.<br>
+        ※고급 레스토랑에서는 결제 금액에 일정의 서비스료가 추가되어 있는 경우도 있다.<p><br>
+        음료수:수도물은 음용 가능.<br>
+        음식점 등에서는 무료로 제공되는 경우가 대부분이지만, 탄산수는 없는 경우도 많다.<p><br>
+        화장실:공중 화장실이 발달.(역과 공원 등에서 이용이 가능)<br>
+        불특정 다수의 사람이 이용하기 때문에, 더러워져 있는 경우도 있다.<p><br>
+        음주,흡연:음주・흡연은 법률상 만20세 이상.
+    </div>
+    <script src="js/accordion.js"></script>
+    </center>
+
+    <a class="a" href="#" title="맨위로"><img src="img/use/up.png"></a>
+    </body>
+</html>

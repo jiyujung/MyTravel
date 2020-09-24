@@ -1,0 +1,334 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>필리핀</title>
+        <script src="js/philippines.js"></script>
+        <script src="js/clock.js"></script>
+        <link rel="stylesheet" href="css/menu.css">
+        <link rel="stylesheet" href="css/country.css">
+        <link rel="stylesheet" href="css/info.css">
+        <link rel="stylesheet" href="css/accordion.css">
+    </head>
+    <body>
+        <font size=5><p align=center><a href="index.html" class="travel">My travel</a></p></font>
+        <div class='menu'>
+          <ul>
+            <li class='active sub'>
+              <a href='#'>동아시아</a>
+              <ul>
+                <li class='sub'>
+                  <a href="japan.html">일본</a>
+                  <ul>
+                    <li><a href='tokyo.html'>도쿄</a></li>
+                    <li><a href='osaka.html'>오사카</a></li>
+                    <li><a href='kyoto.html'>교토</a></li>
+                    <li><a href='nara.html'>나라</a></li>
+                    <li><a href='kobe.html'>고베</a></li>
+                  </ul>
+                </li>
+                <li class='sub'>
+                  <a href='china.html'>중화인민공화국(중국)</a>
+                  <ul>
+                    <li><a href='shanghai.html'>상하이</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class='active sub'>
+              <a href='#'>동남아시아</a>
+              <ul>
+                <li class='sub'>
+                  <a href='malaysia.html'>말레이시아</a>
+                  <ul>
+                    <li><a href='kualaLumpur.html'>쿠알라룸푸르</a></li>
+                    <li><a href='melaka.html'>말라카</a></li>
+                  </ul>
+                </li>
+                <li class='sub'>
+                  <a href='philippines.html'>필리핀</a>
+                  <ul>
+                    <li><a href='cebu.html'>세부</a></li>
+                  </ul>
+                </li>
+                <li><a href='singapore.html'>싱가포르</a></li>
+                <li class='sub'>
+                  <a href='thailand.html'>태국</a>
+                  <ul>
+                    <li><a href='bangkok.html'>방콕</a></li>
+                    <li><a href='krabi.html'>끄라비</a></li>
+                  </ul>
+                </li>
+                <li class='sub'>
+                  <a href='vietnam.html'>베트남</a>
+                  <ul>
+                    <li><a href='hanoi.html'>하노이</a></li>
+                    <li><a href='danang.html'>다낭</a></li>
+                    <li><a href='hoian.html'>호이안</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class='active sub'>
+              <a href='#'>동유럽</a>
+              <ul>
+                <li class='sub'>
+                  <a href='czechRepublic.html'>체코</a>
+                  <ul>
+                    <li><a href='praha.html'>프라하</a></li>
+                    <li><a href='kutnahora.html'>쿠트나호라</a></li>
+                  </ul>
+                </li>
+                <li class='sub'>
+                  <a href='hungary.html'>헝가리</a>
+                  <ul>
+                    <li><a href='budapest.html'>부다페스트</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class='active sub'>
+              <a href='#'>서유럽</a>
+              <ul>
+                <li class='sub'>
+                  <a href='austria.html'>오스트리아</a>
+                  <ul>
+                    <li><a href='vienna.html'>비엔나</a></li>
+                    <li><a href='salzburg.html'>잘츠부르크</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class='active sub'>
+              <a href='#'>오세아니아</a>
+              <ul>
+                <li><a href='guam.html'>괌</a></li>
+              </ul>
+            </li>
+            <li class='active sub'>
+              <a href='#'>기타</a>
+              <ul>
+                <li><a href='hongkong.html'>홍콩</a></li>
+                <li><a href='macau.html'>마카오</a></li>
+                <li class='sub'>
+                  <a href='indonesia.html'>인도네시아</a>
+                  <ul>
+                      <li><a href='bali.html'>발리</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>
+                <a href='picture.html'>사진첩</a>
+            </li>
+          </ul>
+        </div>
+       
+        <center>
+        <table>
+          <tr>
+            <td colspan="2"><font size=5>필리핀</font></td>
+          </tr>
+          <tr>
+            <td><img src="img/esAsia/philippines/flag.png" class="img" hspace=30px></td>
+            <td>
+              <font size=4>현재시간:<script>document.write(getWorldTime(+8));</script><p>
+              시차:1시간 빠름<p>
+              수도:마닐라<p>
+              공용어:영어, 필리핀어<p>
+              인구:약 1억 800만 명<p>
+              종교:기독교<p>
+              전압:220V(11자)<p>
+              통화단위:페소(₱)<p>
+              <form name="cal">
+                  화폐계산: <input type="text" name="money" size=5>페소(₱) * 20 
+                  <input type="button" value="=" onClick="calNow()">
+                  <input type="text" name="result_multiply" size=7 readonly>원 <!--readonly:읽기 전용 속성-->
+              </form>
+              </font>
+            </td>
+          </tr>
+        </table>        
+        <hr class="line">
+        <button class="accordion">기후</button>
+        <div class="panel">
+          <p>필리핀의 기후는 1년 내내 기온이 높은 열대 몬순 기후<p>
+          계절풍 기후라고 하기도 하는데 계절풍의 영향으로 여름에는 바다에서 오는 습한 바람의 영향으로 습윤한 기후인 우기가,<br>
+          겨울에는 대륙에서 불어오는 건조한 바람의 영향으로 건기가 됨<p>
+          열대 우림 기후와 사바나 기후의 중간 정도 되는 기후<p>
+  
+          계절풍 이외에도 각 지방의 위도와 고도, 산맥 등의 지리적인 요인에 의해서<br>
+          기후가 결정되기 때문에 필리핀의 기후는 지역별로 차이가 심한 편<p>
+          12~2월<br>
+          겨울이라고 불리는 이 시기는 여름에 비해서 비교적 기온이 낮고 비도 적음<br>
+          이 시즌에는 우리나라의 초가을 날씨처럼 아침저녁으로 시원한 바람이 붐<br>
+          기온이 낮다고 해도 낮에는 티셔츠 하나로 충분할 정도이고<br>
+          밤에는 약간 서늘해지므로 트레이닝복이나 얇은 스웨터 정도를 갖고 가면 좋음<br>
+          필리핀 어학연수는 겨울에 가는것이 기후적으로 보면 더 좋다고 할 수 있음<p>
+          3~5월<br>
+          한국의 봄에 해당하는 이 시기에 필리핀에서는 일찌감치 여름이 찾아옴<br>
+          연중 가장 더울 때는 5월인데 무더위의 낮 온도는 35~40℃에 이르기까지 함<br>
+          밤에도 기온은 그다지 내려가지 않아 대개 25℃ 정도<br>
+          다만 건기이기 때문에 그렇게 무덥다고는 느껴지지 않음<p>
+          6~12월<br>
+          대개 5월에 여름이 끝나고 6월부터 우기가 시작됨<br>
+          비는 순식간에 내렸다가 그치는 경향이 많으므로 보통은 우산이 필요없고<br>
+          비를 만났을때 잠시 쉬었다 가면 되는데 간혹 보슬비가 오래도록 내릴 때도 있음<br>
+          우기에는 태풍에 주의해야 함
+        </div>
+        <button class="accordion">긴급시</button>
+        <div class="panel">
+          <p>경찰, 구급, 소방 : 117
+        </div>
+        <button class="accordion">음주, 흡연</button>
+        <div class="panel">
+          <p>비무슬림만 가능. 오전 1시부터 오전 8시까지 술 판매가 금지
+        </div>
+        <button class="accordion">교통</button>
+        <div class="panel">
+          <p><font size=4>지프니</font><p>
+          필리핀을 대표하는 서민 교통수단 중 하나<p>
+          제 2차 세계대전 이후 미군이 남긴 지프차의 엔진, 부품 등을 개조하여 운행하기 시작했으며<br>
+          지프니마다 개성있는 디자인으로 화려하게 장식되어 있음<p>
+          한국의 버스 시스템과 달리 별도의 정류장이 정해져 있지 않으며,<br>
+          지프니 앞 창문에 명시되어 있는 장소를 보고 승차한 후, 목적지에서 지프니를 멈춰 하차하면 됨<p>
+          *지프니 탑승 시 주의사항*<br>
+          지프니는 필리핀 서민 교통수단으로 항상 안전에 유의하여야 함<br>
+          사고를 예방하기 위해 큰 금액은 소지하지 않는 것이 좋으며,<br>
+          부득이하게 큰 금액을 소지할 경우에는 지갑이 아닌 가방 안 쪽에 별도로 보관하는 것이 좋음<br>
+          또한 지나치게 화려한 악세서리를 착용하거나 명품백 등을 소지하는 것은 위험한 상황을 초래할 수 있음<br>
+          한국 버스와 달리 창문과 출입문이 모두 뚫려있는 상태이므로 매연을 마시기 쉬움<br>
+          미리 손수건을 준비하여 입과 코를 막는 것이 좋음<br>
+          지프니 탑승료는 지역과 거리에 따라 상이할 수 있으나 보통 6 – 15페소 내외이므로<br>
+          지나치게 큰 금액보다 동전 또는 작은 단위의 화폐(20페소, 50페소)를 준비하는 것이 좋음<br>
+          간혹 지프니 출입구 쪽에 매달려서 탑승하는 필리핀 사람들을 볼 수 있는데<br>
+          이를 따라하는 행동은 안전에 큰 위험을 줄 수 있음<p><br><br>
+          <font size=4>트라이시클</font><p>
+          트라이시클은 일반 오토바이 옆에 사람이 탈 수 있는 자리를 만들어 운행하는 것으로<br>
+          지프니와 더불어 서민들이 많이 이용하는 대중교통 수단<p>
+          트라이사클의 형태는 지역에 따라 다르며, 각 지역별로 등록제로 운영되어 제한 구역 내에서만 운행할 수 있도록 되어있음<p>
+          주로 단거리 이동 시 많이 이용하며, 대로변에 정차하는 지프니와 달리<br>
+          목적지 문 앞까지 운행하기 때문에 편하게 목적지까지 갈 수 있다는 장점이 있음<p>
+          트라이시클은 종류에 따라 최대 7명까지 탑승 가능하며,<br>
+          4명 – 7명의 사람들이 모두 탑승해야 출발하는 레귤러 트라이시클과<br>
+          개인 혹은 7명 내 일행이 탑승하여 운행하는 스페셜 트라이시클이 있음<p>
+          트라이시클은 이동거리와 탑승인원에 따라 요금이 달라지며 거리가 길수록 더 많은 요금이 부과됨<p>
+          레귤러 운행 시 기본요금은 8페소이며, 스폐셜 운행 시 기본요금은 20페소(2018년 9월 마닐라 기준)<p><br><br>
+          <font size=4>버스</font><p>
+          필리핀에서 운행되는 버스에는 시내버스와 시외버스 두 종류가 있으며,<br>
+          주로 메트로 마닐라를 중심으로 다양한 버스 노선이 운행되고 있음<p>
+          메트로 마닐라에는 한국과 같은 버스종합터미널이 없으며,<br>
+          버스 회사별로 운영하고 있는 터미널을 이용하여 버스에 탑승해야 함<p>
+          필리핀의 대표적인 버스 회사로는 Victory Liner와 Philtranco가 있음<p>
+          버스를 탑승할 때는 버스 앞 창문에 명시되어 있는 목적지를 확인한 후 탑승해야 하며,<br>
+          버스 요금은 이동거리와 버스 상태(오래된 정도, 에어컨 유무 등)에 따라 다름<p>
+          기본요금은 약 12페소 이며, 매표소 혹은 버스 내 직원에게 지불하면됨<p><br><br>
+          <font size=4>택시</font><p>
+          필리핀 택시는 크게 하얀색 택시(공항 쿠폰택시/일반 택시)와 노란색 택시(공항택시)로 나눌 수 있음<p>
+          <table border class="philippinestaxi">
+            <tr>
+              <td>색상</td>
+              <td>종류</td>
+              <td>특징</td>
+              <td>요금</td>
+            </tr>
+            <tr>
+              <td>노란색</td>
+              <td>공항 택시</td>
+              <td>번호판 외에 빨간색 배경에 노란색 글씨가 적힌 스티커가<br>
+                  차체에 부착되어 있습니다.<br>
+                  일반 택시보다 요금이 비쌉니다.</td>
+              <td>기본요금 70페소 (500m 기준)<br>
+                  추가 300m 당 4페소<br>
+                  일반 택시의 약 1.5배 요금</td>
+            </tr>
+            <tr>
+              <td>하얀색</td>
+              <td>공항 쿠폰택시</td>
+              <td>번호판 외에 파란색 배경에 노란색 글씨가 적힌 스티커가<br>
+                  차체에 부착되어 있습니다.<br>
+                  미터 택시가 아닌 정찰제로 장소에 따라 가격이 정해져 있습니다.</td>
+              <td>정찰제<br>
+                  일반 택시의 약 2.5배 요금</td>
+            </tr>
+            <tr>
+              <td>하얀색</td>
+              <td>일반 택시</td>
+              <td>별도로 부착된 스티커가 없습니다.</td>
+              <td>기본요금 40페소 (500m 기준)<br>
+                  추가 300m 당 3.5페소</td>
+            </tr>
+          </table><p>
+          최근에는 여행객 뿐만 아니라 필리핀 사람들도 어플을 통해 목적지를 입력하고 예상요금을 확인한 후<br>
+          예약하여 이용할 수 있는 그랩택시(Grab Taxi)를 많이 이용하고 있음<p>
+          그랩택시 어플을 이용하면 출발지와 목적지를 설정하여 도착예상 시간과 택시 요금을 미리 알 수 있음<p>
+          또한 근처에 있는 그랩 차량 기사와 연결이 되어, 출발지까지 픽업하러 오며<br>
+          기사의 얼굴, 차량 번호, 이용 후기 등의 정보를 확인할 수 있음<p>
+          Grab 웹사이트:<a href="http://www.grab.com/ph" target="_blank" class="travel">www.grab.com/ph</a><p>
+          *택시 탑승 시 주의사항*<br>
+          1. 간혹 미터기를 켜지 않고 출발하는 경우가 있으니,<br>
+          출발 전 혹은 탑승 전 운전기사에게 미터기를 켜달라고 미리 말하는 것이 좋음<br>
+          2. 안전을 위해 늦은시각에는 택시를 탑승하지 않는 것이 좋음<br>
+          3. 혼자 탑승 하는 것 보다 2인 이상 탑승하는 것이 좋음<p><br><br>
+          <font size=4>지상철 LRT & MRT</font><p>
+          필리핀은 지하철이 없고 LRT(Light Rail Transit) 와 MRT(Metro Rail Transit)라는 지상철을 운행하고 있음<p>
+          LRT는 북쪽 모뉴멘토와 남쪽 바클라란 사이를 운행하는 LRT-1 과<br>
+          마닐라와 동쪽 마라키나 사이를 운행하는 LRT-2 두 개의 노선으로 구성되어 있음<p>
+          MRT는 EDSA거리를 따라 메트로 마닐라의 남과 북을 연결하는 노선(마카티 아얄라 센터 – 퀘존 시티)이 있음<p>
+          LRT와 MRT 모두 거리에 따라 요금이 정산되며, 탑승 전 미리 노선을 확인하여 매표소에서 승차권을 구입하거나<br>
+          Beep 카드(지상철 전용 교통카드)를 구입하여 사용할 수 있음<p>
+          Beep 카드는 세븐일레븐 등 가까운 편의점에서 구입한 뒤 충전하여 사용할 수 있으며,<br>
+          매표소에서 직접 구입한 단수 승차권에 비해 할인된 요금으로 이용할 수 있음<br>
+          (Beep 카드 20페소, 최소 충전금액 11페소)<p>
+          *LRT & MRT 탑승 시 주의사항*<br>
+          1. 풍선, 화학 물질, 뚜껑이 열려있는 병, 캔 등은 반입할 수 없음<br>
+          2. 출퇴근 시간에는 사람이 많아 매우 번잡함<br>
+          3. 많은 사람이 이용하는 대중교통이므로 소매치기 등의<br>
+          피해를 방지하기 위해 소지품 보관에 유의하여야 함<br>
+          4. 한국 지하철과 달리 환승 서비스가 잘 되어 있지 않기 때문에<br>
+          LRT에서 MRT로 환승 할 경우, 근처 MRT역까지 걸어서 이동해야 함<p>
+          <table border class="philippinestrain">
+            <tr>
+              <td></td>
+              <td>LRT</td>
+              <td>MRT</td>
+            </tr>
+            <tr>
+              <td>운영시간</td>
+              <td>(평일)05:00-22:00,<br>
+                  (주말)05:00-21:00/21:30</td>
+              <td>오전 05:30-23:00</td>
+            </tr>
+            <tr>
+              <td>웹사이트</td>
+              <td><a href="http://www.lrta.gov.ph" class="travel">www.lrta.gov.ph</a></td>
+              <td><a href="http://www.dotcmrt3.gov.ph/" class="travel">www.dotcmrt3.gov.ph/</a></td>
+            </tr>
+            <tr>
+              <td>이용 요금</td>
+              <td>LRT-1 (15~30페소),<br>
+                  LRT-2 (15~25페소)</td>
+              <td>10~15페소</td>
+            </tr>
+          </table><p><br><br>
+          <font size=4>UV EXPRESS</font><p>
+          UV Express 또는 Van 이라 불리는 합승차는 원거리 이동이 가능한 교통수단<p>
+          출발지와 목적지가 차량 앞, 뒤에 표시되어 있으며 승차 인원이 모두 탑승해야 출발<p>
+          한 열당 4명이 앉기 때문에 자리가 비좁고 불편할 수 있음<p>
+          해당 목적지를 가는 도중 본인이 원하는 장소에 하차 할 수 있으며,<br>
+          단거리 기본요금은 15페소이고 장거리에는 60페소 이상의 요금을 내는 경우도 있음<p>
+          *UV Express 탑승 시 주의사항*<br>
+          1. 차 문 근처에 탑승 할 경우 사람들이 목적지에서 내릴 때마다 움직여야해서 불편할 수 있음<br>
+          2. 안전을 위해 차 문 근처에 탑승 할 경우 문이 잠겨 있는지 잘 확인하는 것이 좋음
+        </div>
+        <button class="accordion">면세한도</button>
+        <div class="panel">
+          <p>담배 1보루 또는 연초 50개피<br>
+          주류 와인 2리터 또는 양주 1리터 이하<br>
+          구입가 총액 1만 페소(한화 22만원 상당) 이내의 물품<br>
+          필리핀화 5만페소(한화 110만원상당), 미화 1만달러 상당 이내의 외화
+        </div>
+
+        <script src="js/accordion.js"></script>
+        <a class="a" href="#" title="맨위로"><img src="img/use/up.png"></a>
+    </body>
+</html>

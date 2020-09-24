@@ -1,0 +1,399 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>말레이시아</title>
+        <script src="js/malaysia.js"></script>
+        <script src="js/clock.js"></script>
+        <link rel="stylesheet" href="css/menu.css">
+        <link rel="stylesheet" href="css/country.css">
+        <link rel="stylesheet" href="css/info.css">
+        <link rel="stylesheet" href="css/accordion.css">
+    </head>
+    <body>
+        <font size=5><p align=center><a href="index.html" class="travel">My travel</a></p></font>
+        <div class='menu'>
+          <ul>
+            <li class='active sub'>
+              <a href='#'>동아시아</a>
+              <ul>
+                <li class='sub'>
+                  <a href="japan.html">일본</a>
+                  <ul>
+                    <li><a href='tokyo.html'>도쿄</a></li>
+                    <li><a href='osaka.html'>오사카</a></li>
+                    <li><a href='kyoto.html'>교토</a></li>
+                    <li><a href='nara.html'>나라</a></li>
+                    <li><a href='kobe.html'>고베</a></li>
+                  </ul>
+                </li>
+                <li class='sub'>
+                  <a href='china.html'>중화인민공화국(중국)</a>
+                  <ul>
+                    <li><a href='shanghai.html'>상하이</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class='active sub'>
+              <a href='#'>동남아시아</a>
+              <ul>
+                <li class='sub'>
+                  <a href='malaysia.html'>말레이시아</a>
+                  <ul>
+                    <li><a href='kualaLumpur.html'>쿠알라룸푸르</a></li>
+                    <li><a href='melaka.html'>말라카</a></li>
+                  </ul>
+                </li>
+                <li class='sub'>
+                  <a href='philippines.html'>필리핀</a>
+                  <ul>
+                    <li><a href='cebu.html'>세부</a></li>
+                  </ul>
+                </li>
+                <li><a href='singapore.html'>싱가포르</a></li>
+                <li class='sub'>
+                  <a href='thailand.html'>태국</a>
+                  <ul>
+                    <li><a href='bangkok.html'>방콕</a></li>
+                    <li><a href='krabi.html'>끄라비</a></li>
+                  </ul>
+                </li>
+                <li class='sub'>
+                  <a href='vietnam.html'>베트남</a>
+                  <ul>
+                    <li><a href='hanoi.html'>하노이</a></li>
+                    <li><a href='danang.html'>다낭</a></li>
+                    <li><a href='hoian.html'>호이안</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class='active sub'>
+              <a href='#'>동유럽</a>
+              <ul>
+                <li class='sub'>
+                  <a href='czechRepublic.html'>체코</a>
+                  <ul>
+                    <li><a href='praha.html'>프라하</a></li>
+                    <li><a href='kutnahora.html'>쿠트나호라</a></li>
+                  </ul>
+                </li>
+                <li class='sub'>
+                  <a href='hungary.html'>헝가리</a>
+                  <ul>
+                    <li><a href='budapest.html'>부다페스트</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class='active sub'>
+              <a href='#'>서유럽</a>
+              <ul>
+                <li class='sub'>
+                  <a href='austria.html'>오스트리아</a>
+                  <ul>
+                    <li><a href='vienna.html'>비엔나</a></li>
+                    <li><a href='salzburg.html'>잘츠부르크</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class='active sub'>
+              <a href='#'>오세아니아</a>
+              <ul>
+                  <li><a href='guam.html'>괌</a></li>
+              </ul>
+            </li>
+            <li class='active sub'>
+              <a href='#'>기타</a>
+              <ul>
+                <li><a href='hongkong.html'>홍콩</a></li>
+                <li><a href='macau.html'>마카오</a></li>
+                <li class='sub'>
+                  <a href='indonesia.html'>인도네시아</a>
+                  <ul>
+                      <li><a href='bali.html'>발리</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>
+                <a href='picture.html'>사진첩</a>
+            </li>
+          </ul>
+        </div>
+
+        <center>
+        <table>
+          <tr>
+            <td colspan="2"><font size=5>말레이시아</font></td>
+          </tr>
+          <tr>
+            <td><img src="img/esAsia/malaysia/flag.png" class="img" hspace=30px></td>
+            <td>
+              <font size=4>현재시간:<script>document.write(getWorldTime(+8));</script><p>
+              시차:1시간 빠름<p>
+              수도:쿠알라룸푸르<p>
+              공용어:말레이어<p>
+              인구:약 3200만 명<p>
+              국교:이슬람교(종교의 자유 보장)<p>
+              전압:220V~240V<p>
+              화폐단위:링깃(RM)<p>
+              <form name="cal">
+                화폐계산: <input type="text" name="money" size=5>링깃(RM) * 280
+                <input type="button" value="=" onClick="calNow()">
+                <input type="text" name="result_multiply" size=7 readonly>원 <!--readonly:읽기 전용 속성-->
+              </form>
+              </font>
+            </td>
+          </tr>
+        </table>
+        <hr class="line">
+        <button class="accordion">기후</button>
+        <div class="panel">
+          <p>연중 고온 다습한 열대 기후<br>
+          연평균 기온은 21°C~32°C지만, 고지대의 경우 15°C~25°C<br>
+          연평균 강수량은 2,000~2,500mm
+        </div>
+        <button class="accordion">긴급시</button>
+        <div class="panel">
+          <p>경찰, 구급, 소방 : 999<br>
+          음주, 흡연 : 만21세 이상
+        </div>
+        <button class="accordion">교통</button>
+        <div class="panel">
+          <p><font size=4>GOKL CITY BUS</font><p>
+          시민들과 관광객들의 편의를 위해 무료 지원<p>
+          레드, 블루, 퍼플, 그린 라인으로 운영<br>
+          레드:Relax<br>
+          블루:work<br>
+          퍼플:sight-see<br>
+          그린:shopping<p>
+          14의 쇼핑몰, 30개 이상의 호텔, 8개의 종교 건축물, 14개의 관광명소에 정차<br>
+          월-목:6.00 AM ~ 11.00 PM<br>
+          금-토:6.00 AM ~ 01.00 AM<br>
+          일요일:7.00 AM ~ 11.00 PM<br>
+          배차 간격: 5~15분<p><br><br>
+          <font size=4>Grab</font><p>
+          사용방법<br>
+          1. 현지 유심 구매<br>
+          2. 핸드폰으로 Grab을 다운로드<br>
+          3. 현지 번호로 인증<br>
+          4. 현재 위치와 목적지를 입력 후 택시를 부름<p>
+          팁<br>
+          배낭여행 중이라면 Grab Shareeh 추천(쉽게 말해 합승인데 약 30% 쌈)<br>
+          인원이 4명 이상이라면 Grab Car 6 Seater로 부르길<p>
+          주의사항<br>
+          이동시간과 무관하게 처음 제시받는 가격과 동일한 비용을 냄<br>
+          고속도로 입장비는 내는게 맞음(덤터기로 오해X)<br>
+          출퇴근 시간에는 High Demand(높은 수요)로 가격이 오름<br>
+          관광지 앞 일렬로 서 있는 택시는 현지 물가에 밝지 않으면 멀리하길<p><br><br>
+          <font size=4>LRT</font><p>
+          운행요금은 거리에 따라 달라짐<br>
+          홈페이지 참고 : <a href="http://www.myrapid.com.my" target="_blank" class="travel">www.myrapid.com.my</a><p><br><br>
+          <font size=4>모노레일</font><p>
+          쿠알라룸푸르 시내에서만 운행<br>
+          작은 수용인원<br>
+          LRT보다 속도 느림
+        </div>
+        <button class="accordion">면세한도</button>
+        <div class="panel">
+          <p>어른의 한에서 1리터 이하(1병)<br>
+          담배:1보루(200개비)<br>
+          향수:400링깃이하
+        </div>
+        <button class="accordion">여권/비자</button>
+        <div class="panel">
+          <p>입국 날짜를 기준으로 6개월 이상 유효기간이 남은 여권이나 여행 서류 소지<br>
+          사회사업 또는 사업 목적의 방문 시에는 국적과 무관하게 무비자로 입국 가능
+        </div>
+        <button class="accordion">2019 공휴일</button>
+        <div class="panel"><p>
+          <table border="1" class="malaysiaday">
+            <tr>
+              <td>날짜</td>
+              <td>평일</td>
+              <td>공휴일</td>
+              <td>유형</td>
+              <td>설명</td>
+            </tr>
+            <tr>
+              <td>1월 1일</td>
+              <td>화요일</td>
+              <td>새해 첫날</td>
+              <td>대체휴무일</td>
+              <td>일 년의 가장 첫날.</td>
+            </tr>
+            <tr>
+              <td>2월 5일</td>
+              <td>화요일</td>
+              <td>중국의 설날</td>
+              <td>공휴일</td>
+              <td>봄 축제로도 잘 알려진 이 축제는 중국 전통의 음력 달력의<br>
+                전환기를 기념하여 열리는 중요한 기념일</td>
+            </tr>
+            <tr>
+              <td>2월 6일</td>
+              <td>수요일</td>
+              <td>중국의 설날2</td>
+              <td>공휴일</td>
+              <td>중국의 설날의 2일째 되는 날로서,결혼한 딸들이<br>
+                그들의 친부모, 친척, 가까운 친구들을 방문하는 날</td>
+            </tr>
+            <tr>
+              <td>2월 14일</td>
+              <td>목요일</td>
+              <td>발렌타인 데이</td>
+              <td>대체휴무일</td>
+              <td>문화적 상징이자 종교적 및 상업적인 행사로서<br>
+                로맨스 및 로맨틱한 사랑의 기념하는 날</td>
+            </tr>
+            <tr>
+              <td>3월 4일</td>
+              <td>월요일</td>
+              <td>마하 시바라트리<br>시바라트리</td>
+              <td>대체휴무일</td>
+              <td>힌두교 축제 중 하나로서 매년 시바 신을 기리기 위해 만들어짐<br>
+                 이 날은 힌두교 달력의 마지막 날인 팔군 달 13일에 개최</td>
+            </tr>
+            <tr>
+              <td>4월 3일</td>
+              <td>수요일</td>
+              <td>미라지</td>
+              <td>대체휴무일</td>
+              <td>무함마드의 미라지 여정을 기념하는 날<br>
+                이는 이슬람력에 있어 가장 중요 사건 중에 하나</td>
+            </tr>
+            <tr>
+              <td>4월 19일</td>
+              <td>금요일</td>
+              <td>성 금요일</td>
+              <td>대체휴무일</td>
+              <td>예수의 부활을 기념하는 기독교 축제이자 휴일</td>
+            </tr>
+            <tr>
+              <td>4월 21일</td>
+              <td>일요일</td>
+              <td>부활절</td>
+              <td>대체휴무일</td>
+              <td>예수의 부활을 기념하는 기독교 축제이자 휴일</td>
+            </tr>
+            <tr>
+              <td>5월 1일</td>
+              <td>수요일</td>
+              <td>근로자의 날</td>
+              <td>공휴일</td>
+              <td>유럽에서 매년 5월 1일은 봄 축제이자<br>
+                노동자를 기리는 근로자의 날 기념 행사가 이루어짐</td>
+            </tr>
+            <tr>
+              <td>5월 19일</td>
+              <td>일요일</td>
+              <td>석가탄신일</td>
+              <td>공휴일</td>
+              <td>본 명절은 전통적으로 동아시아 대부분의 지역에서<br>
+                고타마 싯다르타 왕자의 생일을 기념하기 위해 행해지는 기념일<br>
+                말레이시아에서는 웨삭 데이라는 명칭으로 부처님 오신날을 기념</td>
+            </tr>
+            <tr>
+              <td>6월 5일</td>
+              <td>수요일</td>
+              <td>하리라야 아이딜피트리</td>
+              <td>공휴일</td>
+              <td>이슬람력으로 금식월(사움)에 진행되는 라마단 기간이<br>
+                  끝남에 따라 세계적으로 이루어지는 중요한 종교적 명절<br>
+                  이는 사왈월의 첫 번째 날에 개최</td>
+            </tr>
+            <tr>
+              <td>6월 6일</td>
+              <td>목요일</td>
+              <td>하리라야 아이딜피트리</td>
+              <td>공휴일</td>
+              <td>하리 라야 아이딜피트리 휴일의 두번째 날<br>
+                  이는 이슬람력의 사왈 월 두번째 날에 해당</td>
+            </tr>
+            <tr>
+              <td>8월 11일</td>
+              <td>일요일</td>
+              <td>이드 알-아드하</td>
+              <td>공휴일</td>
+              <td>이슬람교에 있어 가장 중요한 명절 중 하나로 이브라힘(아브라함)이<br>
+                  하나님의 명령에 따라 아들을 희생시키려한 의지를 기리기 위해 제정된 날<br>
+                  이는 이슬람력으로 둘-히자 월의 열번째 날에 이루어짐</td>
+            </tr>
+            <tr>
+              <td>8월 31일</td>
+              <td>토요일</td>
+              <td>(말레이시아)독립기념일</td>
+              <td>공휴일</td>
+              <td>말레이시아가 영국으로부터 독립한 날을 기리기 위한 날</td>
+            </tr>
+            <tr>
+              <td>9월 1일</td>
+              <td>일요일</td>
+              <td>무하람</td>
+              <td>공휴일</td>
+              <td>이슬람의 새해 명절이자 새로운 이슬람력의 시작을 기념하는 날</td>
+            </tr>
+            <tr>
+              <td>9월 9일</td>
+              <td>월요일</td>
+                <td>국왕 탄생일</td>
+              <td>공휴일</td>
+              <td>국경일로서 양 디 페르투안 아공(말레이시아 국왕의 직함)의<br>
+                  생일을 축하하기 위해 지정된 날</td>
+            </tr>
+            <tr>
+              <td>9월 16일</td>
+              <td>월요일</td>
+              <td>말레이시아의 날</td>
+              <td>공휴일</td>
+              <td>1963년 말레이시아 연방의 설립을 기념하는 날<br>
+                  말레이시아, 북부 보르네오 및 사라왁의 공식적인 통합이라는 의미를 담고 있음</td>
+            </tr>
+            <tr>
+              <td>10월 27일</td>
+              <td>일요일</td>
+              <td>디왈리</td>
+              <td>공휴일</td>
+              <td>말레이시아에서 하리 디왈리로 알려져 있으며 아스와유자 달에 개최</td>
+            </tr>
+            <tr>
+              <td>11월 10일</td>
+              <td>일요일</td>
+              <td>(예언자)무함마드 탄생일</td>
+              <td>공휴일</td>
+              <td>예언자 무함마드의 탄생을 기념하는 전통 행사로서<br>
+                  라비 알-와왈의 12번째 날로 지정</td>
+            </tr>
+            <tr>
+              <td>12월 24일</td>
+              <td>화요일</td>
+              <td>크리스마스 이브</td>
+              <td>대체휴무일</td>
+              <td>예수 그리스도의 전통적인 탄생일로서<br>
+                  기독교의 대표적인 기념일 중 하나인 크리스마스의 전야에 개최</td>
+            </tr>
+            <tr>
+              <td>12월 25일</td>
+              <td>수요일</td>
+              <td>크리스마스(성탄절)</td>
+              <td>공휴일</td>
+              <td>예수 그리스도의 탄생을 기념하는 기독교의 대표적인 기념일 중 하나<br>
+                  서양 기독교 및 일부 서방 교회에서는 12월 25일, 동방 정교회를 포함한<br>
+                  대부분의 동방 교회에서는 1월 7일로 지정하여 기리고 있음</td>
+            </tr>
+            <tr>
+              <td>12월 31일</td>
+              <td>화요일</td>
+              <td>새해 전야</td>
+              <td>대체휴무일</td>
+              <td>그레고리력의 마지막 날</td>
+            </tr>
+          </table>
+        </div>
+
+        <script src="js/accordion.js"></script>
+        <a class="a" href="#" title="맨위로"><img src="img/use/up.png"></a>
+    </body>
+</html>

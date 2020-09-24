@@ -1,0 +1,232 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>베트남</title>
+        <script src="js/vietnam.js"></script>
+        <script src="js/clock.js"></script>
+        <link rel="stylesheet" href="css/menu.css">
+        <link rel="stylesheet" href="css/country.css">
+        <link rel="stylesheet" href="css/info.css">
+        <link rel="stylesheet" href="css/accordion.css">
+    </head>
+    <body>
+        <font size=5><p align=center><a href="index.html" class="travel">My travel</a></p></font>
+        <div class='menu'>
+          <ul>
+            <li class='active sub'>
+              <a href='#'>동아시아</a>
+              <ul>
+                <li class='sub'>
+                  <a href="japan.html">일본</a>
+                  <ul>
+                    <li><a href='tokyo.html'>도쿄</a></li>
+                    <li><a href='osaka.html'>오사카</a></li>
+                    <li><a href='kyoto.html'>교토</a></li>
+                    <li><a href='nara.html'>나라</a></li>
+                    <li><a href='kobe.html'>고베</a></li>
+                  </ul>
+                </li>
+                <li class='sub'>
+                  <a href='china.html'>중화인민공화국(중국)</a>
+                  <ul>
+                    <li><a href='shanghai.html'>상하이</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class='active sub'>
+              <a href='#'>동남아시아</a>
+              <ul>
+                <li class='sub'>
+                  <a href='malaysia.html'>말레이시아</a>
+                  <ul>
+                    <li><a href='kualaLumpur.html'>쿠알라룸푸르</a></li>
+                    <li><a href='melaka.html'>말라카</a></li>
+                  </ul>
+                </li>
+                <li class='sub'>
+                  <a href='philippines.html'>필리핀</a>
+                  <ul>
+                    <li><a href='cebu.html'>세부</a></li>
+                  </ul>
+                </li>
+                <li><a href='singapore.html'>싱가포르</a></li>
+                <li class='sub'>
+                  <a href='thailand.html'>태국</a>
+                  <ul>
+                    <li><a href='bangkok.html'>방콕</a></li>
+                    <li><a href='krabi.html'>끄라비</a></li>
+                  </ul>
+                </li>
+                <li class='sub'>
+                  <a href='vietnam.html'>베트남</a>
+                  <ul>
+                    <li><a href='hanoi.html'>하노이</a></li>
+                    <li><a href='danang.html'>다낭</a></li>
+                    <li><a href='hoian.html'>호이안</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class='active sub'>
+              <a href='#'>동유럽</a>
+              <ul>
+                <li class='sub'>
+                  <a href='czechRepublic.html'>체코</a>
+                  <ul>
+                    <li><a href='praha.html'>프라하</a></li>
+                    <li><a href='kutnahora.html'>쿠트나호라</a></li>
+                  </ul>
+                </li>
+                <li class='sub'>
+                  <a href='hungary.html'>헝가리</a>
+                  <ul>
+                    <li><a href='budapest.html'>부다페스트</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class='active sub'>
+              <a href='#'>서유럽</a>
+              <ul>
+                <li class='sub'>
+                  <a href='austria.html'>오스트리아</a>
+                  <ul>
+                    <li><a href='vienna.html'>비엔나</a></li>
+                    <li><a href='salzburg.html'>잘츠부르크</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class='active sub'>
+              <a href='#'>오세아니아</a>
+              <ul>
+                <li><a href='guam.html'>괌</a></li>
+              </ul>
+            </li>
+            <li class='active sub'>
+              <a href='#'>기타</a>
+              <ul>
+                <li><a href='hongkong.html'>홍콩</a></li>
+                <li><a href='macau.html'>마카오</a></li>
+                <li class='sub'>
+                  <a href='indonesia.html'>인도네시아</a>
+                  <ul>
+                      <li><a href='bali.html'>발리</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>
+                <a href='picture.html'>사진첩</a>
+            </li>
+          </ul>
+        </div>
+
+        <center>
+        <table>
+          <tr>
+            <td colspan="2"><font size=5>베트남</font></td>
+          </tr>
+          <tr>
+            <td><img src="img/esAsia/vietnam/flag.png" class="img" hspace=30px></td>
+            <td>
+              <font size=4>현재시간:<script>document.write(getWorldTime(+7));</script><p>
+              시차:2시간 빠름<p>
+              수도:하노이<p>
+              공용어:베트남어<p>
+              인구:약 9600만 명<p>
+              종교:대승불교<p>
+              전압:220v 50Hz<p>
+              통화단위:동(₫)<p>
+              <form name="cal">
+                화폐계산: <input type="text" name="money" size=5>동(₫) * 0.05 
+                <input type="button" value="=" onClick="calNow()">
+                <input type="text" name="result_multiply" size=7 readonly>원 <!--readonly:읽기 전용 속성-->
+              </form>
+            </font>
+            </td>
+          </tr>
+        </table>
+        <hr class="line">
+        <button class="accordion">기후</button>
+        <div class="panel">
+          <p>베트남의 북부지역(하노이 부근)은 아열대성 기후이고 남부지역(호치민 부근)은 열대성 기후<p>
+          평균기온은 24.1℃, 습도는 평균 83%이고, 평균강수량은 2,151mm로 한국보다 2.4배정도 높음<p>
+          하노이는 춘하추동이 비교적 뚜렷하며 겨울철(12~2월)은 10~16℃, 여름철(4~10월)은 37~40℃까지 이르며,<br>
+          특히 습도가 높아 체감온도는 훨씬 높게 느껴짐<p>
+        </div>
+        <button class="accordion">긴급시</button>
+        <div class="panel">
+          <p>경찰 113<br>
+          구급 115<br>
+          소방 114
+        </div>
+        <button class="accordion">음주, 흡연</button>
+        <div class="panel">
+          <p>음주 허용 연령에 제한을 두지 않음
+        </div>
+        <button class="accordion">교통</button>
+        <div class="panel">
+          <p><font size=4>오토바이</font><p>
+          베트남 사람들이 가장 보편적으로 이용하는 교통수단<p>
+          도로 위에 자동차와 오토바이 비율이 3:7 정도일 만큼 애용하는 교통 수단<p>
+          오토바이 택시는 쎄옴이라고 부름<p>
+          약 1km에 10.000~20.000동이 보통 가격이라고 하니 바가지 주의<p><br><br>
+          <font size=4>버스</font><p>
+          버스노선도 애매하고 배차간격도 길고 애매<p>
+          가격이 쌈<br><p><br>
+          <font size=4>택시</font><p>
+          믿고 탈수 있는 2개의 회사 비나선(VINASUN), 마일린(MAILINH)<p>
+          비나선은 하얀색 택시 마일린은 초록색 택시<p>
+          경차 중형차에 따라 가격이 조금씩 다름<p>
+          기본요금은 경차기준 10.000동<br><p><br>
+          <font size=4>우버</font><p>
+          바가지 위험이 거의 없음<br>
+          드라이버 자차이기 때문에 택시보다 시설이 좋음<p>
+          기본요금 5.000동(10분 정도 거리는 30.000동 정도)<p>
+          베트남어를 몰라도 우버를 요청 할 때 목적지 주소를 입력하기 때문에 안전하게 도착
+        </div>
+        <button class="accordion">노하우/유의 사항</button>
+        <div class="panel">
+          <p>한국과는 달리 베트남에서는 금은방이 환전업을 겸하고 있으며, 공항에서 환전하는 것보다 수수료가 덜하다고 한다.<br>
+          환전만 전문으로 하는 말 그대로의 환전소도 있긴 하지만, 사실상 대도시에만 존재하고 그 수도 많지 않다.<br>
+          그러나 금은방 환전은 엄연한 불법이며 베트남 정부가 불법 외환거래 근절 의지를 보이기 위해<br>
+          금은방을 타깃으로 삼아 집중 단속을 하기 시작했다. 적발시 금은방 주인과 환전하는 고객 둘 다 처벌을 받을 수 있으며<br>
+          환전액 또한 압수당하게 된다. 안전하게 환전할려면 은행, 국제공항, 대형 호텔에서 하자.<p>
+          베트남에서 찢어진 화폐는 사용하지 못한다. 근데 현실은 택시부터 까페까지 잘만 쓰인다.<br>
+          그런데 이 기준이란 게 귀퉁이 1~2mm 정도 살짝 날아간 것도 해당이 되기 때문에,<br>
+          환전이나 거스름돈을 받을 때는 상태를 필히 확인해야 한다. 잘못된 화폐라면 발견 즉시 알려줘야 한다.<br>
+          베트남에서는 찢어진 화폐를 가지고 있거나 화폐를 훼손할 경우 처벌받기 때문이다. 외국인에게도 예외는 없다.<br>
+          이 때문인지 만 동 이상의 베트남 지폐는 비닐에 가까운 재질로 이루어져 있어서 아무리 열심히 구겨도 쉽게 파손되지 않는다.<p>
+          도로에 오토바이가 정말 많은데, 길을 건너는 도중 오토바이가 온다고 중간에 걸음을 멈추거나 뛰어가면 위험하다.<br>
+          그냥 걸어가면 알아서 피해가니 그냥가면 된다. 반대로 자동차는 사람이 피해야한다.<p>
+          현지 가이드와 항상 같이 동행하며 길 안내를 자처 한다거나 구두를 닦아준다며 친절을 베푸는 사람들을 조심해야 한다.<br>
+          여행객을 주로 노리는 이들은 수고 명목으로 나중에 돈을 요구하기 때문이다.<br>
+          모르는 사람이 접근하면 절대 말섞지도 따라가지도 말것.<br>
+          빤스 바람으로 호치민 시내를 돌아다닐 수도 있다.<br>
+          그외 어린이를 시켜서 하는 호객 잡상행위도 빈번하므로 절대로 돈을 주지도 눈도 마주치지 말것을 요한다.<p>
+          도시간 고속도로로 이동시 2층침대형 좌석으로 되어있는 시외버스를 타는 재미가 있다.<br>
+          처음 탈 때 비닐봉투를 받아 신발을 담고 타야 한다.<p>
+          팁 문화가 활발하며 주로 식당, 호텔, 마사지샵에서 이루어진다.<br>
+          베트남은 현지 화폐뿐만 아니라 미국 달러, 한국 원으로도 팁 지불이 가능하다.<br>
+          금액은 너무 비싸게 낼 필요 없이 2만 동, $1~3 또는 한국 지폐 1~3천원 정도면 된다.<br>
+          한화로 5~600원 되는 돈을 주어도 기뻐하는 경우가 많은데<br>
+          이 돈만있어도 오토바이에 휘발유 600~700mL 정도 넣을 수 있는 돈이기 때문이다.<br>
+          가끔 대놓고 한국어를 할 줄 아는 직원의 경우<br>
+          한국에서 이거 얼마 안되는 돈인데 거스름돈 나주면 안 되냐고 비비꼬는 경우가 많다.<br>
+          개인이 결정할 일이지만 그냥 기분좋게 팁으로 주자.<p>
+          여행자들 대다수가 이용하는 마일린 택시, 비나선 택시를 타면 거스름돈을 잘 받을 수 있지만<br>
+          간혹 1천동 단위의 거스름돈을 잔돈이 없다면서 기사들이 주지 않는 경우가 있다.<br>
+          그러나 베트남 동의 화폐가치를 우리나라 원으로 환산하면 호치민 기준, 택시의 기본요금은 최대 500원밖에 되지 않는 데다<br>
+          시내에서 아무리 택시비가 나와도 우리나라 돈으로 3천 원을 넘기기가 힘들다. 생각해보면 몇십 원밖에 안 되는 금액이다.<p>
+          숙박시설 선정시 주말이 끼었다면 다낭 미케비치 주변 호텔은 피해야한다.<br>
+          주말이면 다낭 젊은이들이 해변으로 모여 사설 나이트, 파티를 벌이고 오토바이 노점들이 불야성을 이뤄 잠을 이룰수가 없다.<br>
+          족히 해변에 오토바이 천대는 모이며 밤을 지새운다. 오토바이 노점은 주로 꼬치류, 반쎄오 등의 안주와 라루등의 캔맥주를 팔고<br>
+          스피커를 설치하여 이용객들에게 노래를 부르게 하는 식이다.
+        </div>
+
+        <script src="js/accordion.js"></script>
+        <a class="a" href="#" title="맨위로"><img src="img/use/up.png"></a>
+    </body>
+</html>

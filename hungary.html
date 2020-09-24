@@ -1,0 +1,283 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>헝가리</title>
+        <script src="js/hungary.js"></script>
+        <script src="js/clock.js"></script>
+        <link rel="stylesheet" href="css/menu.css">
+        <link rel="stylesheet" href="css/country.css">
+        <link rel="stylesheet" href="css/info.css">
+        <link rel="stylesheet" href="css/accordion.css">
+    </head>
+    <body>
+        <font size=5><p align=center><a href="index.html" class="travel">My travel</a></p></font>
+        <div class='menu'>
+          <ul>
+            <li class='active sub'>
+              <a href='#'>동아시아</a>
+              <ul>
+                <li class='sub'>
+                  <a href="japan.html">일본</a>
+                  <ul>
+                    <li><a href='tokyo.html'>도쿄</a></li>
+                    <li><a href='osaka.html'>오사카</a></li>
+                    <li><a href='kyoto.html'>교토</a></li>
+                    <li><a href='nara.html'>나라</a></li>
+                    <li><a href='kobe.html'>고베</a></li>
+                  </ul>
+                </li>
+                <li class='sub'>
+                  <a href='china.html'>중화인민공화국(중국)</a>
+                  <ul>
+                    <li><a href='shanghai.html'>상하이</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class='active sub'>
+              <a href='#'>동남아시아</a>
+              <ul>
+                <li class='sub'>
+                  <a href='malaysia.html'>말레이시아</a>
+                  <ul>
+                    <li><a href='kualaLumpur.html'>쿠알라룸푸르</a></li>
+                    <li><a href='melaka.html'>말라카</a></li>
+                  </ul>
+                </li>
+                <li class='sub'>
+                  <a href='philippines.html'>필리핀</a>
+                  <ul>
+                    <li><a href='cebu.html'>세부</a></li>
+                  </ul>
+                </li>
+                <li><a href='singapore.html'>싱가포르</a></li>
+                <li class='sub'>
+                  <a href='thailand.html'>태국</a>
+                  <ul>
+                    <li><a href='bangkok.html'>방콕</a></li>
+                    <li><a href='krabi.html'>끄라비</a></li>
+                  </ul>
+                </li>
+                <li class='sub'>
+                  <a href='vietnam.html'>베트남</a>
+                  <ul>
+                    <li><a href='hanoi.html'>하노이</a></li>
+                    <li><a href='danang.html'>다낭</a></li>
+                    <li><a href='hoian.html'>호이안</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class='active sub'>
+              <a href='#'>동유럽</a>
+              <ul>
+                <li class='sub'>
+                  <a href='czechRepublic.html'>체코</a>
+                  <ul>
+                    <li><a href='praha.html'>프라하</a></li>
+                    <li><a href='kutnahora.html'>쿠트나호라</a></li>
+                  </ul>
+                </li>
+                <li class='sub'>
+                  <a href='hungary.html'>헝가리</a>
+                  <ul>
+                    <li><a href='budapest.html'>부다페스트</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class='active sub'>
+              <a href='#'>서유럽</a>
+              <ul>
+                <li class='sub'>
+                  <a href='austria.html'>오스트리아</a>
+                  <ul>
+                    <li><a href='vienna.html'>비엔나</a></li>
+                    <li><a href='salzburg.html'>잘츠부르크</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class='active sub'>
+              <a href='#'>오세아니아</a>
+              <ul>
+                <li><a href='guam.html'>괌</a></li>
+              </ul>
+            </li>
+            <li class='active sub'>
+              <a href='#'>기타</a>
+              <ul>
+                <li><a href='hongkong.html'>홍콩</a></li>
+                <li><a href='macau.html'>마카오</a></li>
+                <li class='sub'>
+                    <a href='indonesia.html'>인도네시아</a>
+                    <ul>
+                        <li><a href='bali.html'>발리</a></li>
+                    </ul>
+                </li>
+              </ul>
+            </li>
+            <li>
+                <a href='picture.html'>사진첩</a>
+            </li>
+          </ul>
+        </div>
+
+        <center>
+        <table>
+          <tr>
+            <td colspan="2"><font size=5>헝가리</font></td>
+          </tr>
+          <tr>
+            <td><img src="img/eEurope/hungary/flag.png" class="img" hspace=30px></td>
+            <td>
+              <font size=4>현재시간:<script>document.write(getWorldTime(+1));</script><p>
+              시차:8시간 빠름<p>
+              수도:부다페스트<p>
+              공용어:헝가리어<p>
+              인구:약 980만 명<p>
+              종교:로마카톨릭, 개신교(칼빈파), 복음교(루터파) 등<p>
+              전압:230V, 50Hz<p>
+              통화단위:포린트(Ft)<p>
+              <form name="cal">
+                  화폐계산: <input type="text" name="money" size=5>포린트(Ft) * 3.9
+                  <input type="button" value="=" onClick="calNow()">
+                  <input type="text" name="result_multiply" size=7 readonly>원 <!--readonly:읽기 전용 속성-->
+              </form>
+              </font>
+            </td>
+          </tr>
+        </table>
+        <hr class="line">
+        <button class="accordion">기후</button>
+        <div class="panel">
+            <p>헝가리의 기후는 온난한 대륙성 기후이다.<br>
+            해양의 영향을 별로 받지 않기 때문에 겨울과 여름의 기온차가 심하다.<br>
+            연평균 기온은 10.5C이고 겨울에는 추위가 심해 1월 평균 기온이 -3~-1C로 떨어진다.<br>
+            4계절이 뚜렷한 우리나라의 기후에 익숙하다면 무리없는 여행지이다.<br>
+            여름은 꽤 덥다. 7월달 평균 기온은 20~26C로 이 시기에 여행한다면<br>
+            가벼운 옷차림이 좋다. 연평균 강우량은 600mm정도이다.<br>
+            헝가리 여행의 최적기는 쾌적한 날씨가 지속되는 5월~9월이다.<br>
+            그 중에서도 최최적기는 관광객이 몰리는 여름휴가기간을 뺀<br>
+            5월~6월초, 9월정도이다.
+        </div>
+
+        <button class="accordion">긴급시</button>
+        <div class="panel">
+            <p>경찰 107, 112<br>
+            구급 104, 112<br>
+            소방 105, 112
+        </div>
+
+        <button class="accordion">교통</button>
+        <div class="panel">
+          <p>헝가리 부다페스트는 하나의 티켓으로 푸니쿨라와 택시를 제외한 모든 대중교통 이용가능<p>
+          *주의할 점은 어느 도시보다도 1회 권의 종류가 많고 복잡하다.<br>
+          검표는 모든 대중교통수단에서 이루어지며, 매우 엄격하므로 탑승 전 꼭 펀칭을 해야한다.<p>
+          티켓 요금<p>
+          <table border class="hungaryticket">
+            <tr>
+              <td>티켓 종류</td>
+              <td>가격</td>
+            </tr>
+            <tr>
+              <td>Single ticket<br>펀칭후 80분 동안 유효한 티켓으로 환승불가(심야에는 120분 유효)</td>
+              <td>350Ft</td>
+            </tr>
+            <tr>
+              <td>Short section metro ticket for up to 3 stops<br>펀칭 후 30분 이내에 메트로 세 정거장까지만 이동 가능</td>
+              <td>300Ft</td>
+            </tr>
+            <tr>
+              <td>Single ticket bought on the spot<br>티켓 발매기가 아닌 교통수단 내에서 직접 구입했을 때의 티켓으로 펀칭 후 80분 동안 유효,<br>
+                환승 불가(심야에는 120분 유효)</td>
+              <td>450Ft</td>
+            </tr>
+            <tr>
+              <td>Block of 10 ticket<br>1회권 10장 묶음으로 여러 명이 사용할 수 있으며, 탑승할 때마다 펀칭해야 한다.<br>
+                펀칭 후 80분 동안 유효(심야에는 120분 유효)</td>
+              <td>300Ft</td>
+            </tr>
+            <tr>
+              <td>Transfer ticket<br>환승 가능한 티켓으로 90분간 유효하다.<br>
+                환승 후에는 60분간 유효하며 주로 공항에서 시내로 이동할 때 이용(심야에는 120분 유효)</td>
+              <td>530Ft</td>
+            </tr>
+            <tr>
+              <td>Budapest 24-hour travelcard<br>24시간 동안 유효한 티켓으로 메트로, 트램, 버스 무제한 사용과 환승 가능</td>
+              <td>1650Ft</td>
+            </tr>
+            <tr>
+              <td>Budapest 72-hour travelcard<br>72시간 동안 유효한 티켓으로 메트로, 트램, 버스 무제한 사용과 환승 가능</td>
+              <td>4150Ft</td>
+            </tr>
+          </table><p>
+          [티켓 구매처]<br>
+          메트로역 내<br>
+          신문 가판대<p><br>
+          <font size=4>지하철(Metro)</font><p>
+          부다페스트 메트로는 세체니 다리와 영웅광장을 연결하는 1호선 개통을 시작으로<br>
+          2014년에 개통도니 4호선까지 총 4개의 노선이 부다페스트 곳곳을 연결하고 있다.<p>
+          지하철 타는 법<br>
+          티켓을 구입한다.<br>
+          메트로 타러 내려가기 전에 티켓을 화살표 방향으로 넣어 펀칭을 해야된다.<br>
+          메트로를 타고 내릴 때 출입구의 버튼을 눌러야 문이 열린다.<p>
+          운행 시간<br>
+          04:00~23:00<p>
+          지하철 탑승 시 주의사항<br>
+          개찰구 앞에서는 사복경찰의 사복 검표가 매우 엄격하므로 티켓을 꼭 소지하고 펀칭을 해야한다.<br>
+          메트로 2호선, 3호선에 설치된 에스컬레이터가 상당히 길고 빨리 움직이기 때문에<br>
+          타고 내릴 때 조심해야 한다.<p><br><br>
+          <font size=4>버스, 트램</font><p>
+          트램, 버스는 메트로가 닿지 않는 구석구석을 연결한다.<br>
+          정류장에는 안내 시스템이 잘되어 있어 탑승하는 것이 어렵지 않고,<br>
+          내부의 노선도에는 목적지와 함께 환승 가능한 메트로, 트램, 버스 번호가 적혀 있어<br>
+          헝가리어를 몰라도 쉽게 이용할 수 있다.<p>
+          버스, 트램 타는 법<br>
+          티켓을 구입한다.<br>
+          버스와 트램 탑승 후에는 반드시 펀칭기에 티켓을 넣고 펀칭을 한다.<p>
+          운행 시간<br>
+          04:30~23:00<p>
+          버스, 트램 탑승 시 주의사항<br>
+          버스와 트램도 불시 검문이 잦으니 탑승 후에 펀칭을 꼭 해야한다.<p><br><br>
+          <font size=4>교외 전차(HEV)</font><p>
+          부다페스트 근교를 연결하는 교통수단이다. 총 5개의 노선이 운행한다.<br>
+          티켓을 별도로 구매해야 하며 자동발매기나 전차 안에서 직접 구입할 수 있다.<p>
+          HEV 티켓 요금<p>
+          <table border class="hungaryHEV">
+            <tr>
+              <td>거리</td>
+              <td>가격</td>
+            </tr>
+            <tr>
+              <td>10Km</td>
+              <td>250Ft</td>
+            </tr>
+            <tr>
+              <td>15Km</td>
+              <td>310Ft</td>
+            </tr>
+            <tr>
+              <td>20Km</td>
+              <td>370Ft</td>
+            </tr>
+            <tr>
+              <td>25Km</td>
+              <td>465Ft</td>
+            </tr>
+            <tr>
+              <td>30Km</td>
+              <td>560Ft</td>
+            </tr>
+          </table><p>
+          HEV교외 전차 타는 법<br>
+          티켓을 구입한다.<br>
+          교외 전차에 탑승 후 반드시 펀칭기에 티켓을 넣고 펀칭을 한다.<p>
+          운행 시간<br>
+          04:00~00:00<p>
+        </div>
+        <script src="js/accordion.js"></script>
+        
+        <a class="a" href="#" title="맨위로"><img src="img/use/up.png"></a>
+    </body>
+</html>
