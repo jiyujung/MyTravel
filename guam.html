@@ -2,6 +2,8 @@
     <head>
         <meta charset="UTF-8">
         <title>괌</title>
+        <script src="js/guam.js"></script>
+        <script src="js/clock.js"></script>
         <link rel="stylesheet" href="css/menu.css">
         <link rel="stylesheet" href="css/country.css">
         <link rel="stylesheet" href="css/info.css">
@@ -120,5 +122,35 @@
                 </li>
             </ul>
         </div>
+
+        <center>
+            <table>
+                <tr>
+                    <td colspan="2"><font size=5>발리</font></td>
+                </tr>
+                <tr>
+                    <td><img src="img/oceania/guamflag.png" class="img" hspace=30px></td>
+                    <td>
+                        <font size=4>현재시간:<script>document.write(getWorldTime(+10));</script><p>
+                        시차:1시간 빠름<p>
+                        수도:하갓냐<p>
+                        공용어:차모로어, 영어<p>
+                        인구:약 16만 명<p>
+                        종교:대부분 가톨릭<p>
+                        전압:110V<p>
+                        통화단위:달러($)<p>
+                        <form name="cal">
+                            화폐계산:<input type="text" name="money" size=5>달러($) * 1150 
+                            <input type="button" value="=" onClick="calNow()">
+                            <input type="text" name="result_multiply" size=7 readonly>원 <!--readonly:읽기 전용 속성-->
+                        </form>
+                        </font>
+                    </td>
+                </tr>
+            </table>
+    
+                <hr class="line">
+            </center>
+            <a class="a" href="#" title="맨위로"><img src="img/use/up.png"></a>
     </body>
 </html>
