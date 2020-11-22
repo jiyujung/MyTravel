@@ -43,3 +43,4 @@
         + 발리
 ### 메인페이지
 ![main](https://user-images.githubusercontent.com/53562213/96367047-73249800-1186-11eb-9c37-f4735304d42b.png)
+### 세부페이지
