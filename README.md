@@ -44,4 +44,5 @@
 ### 메인페이지
 ![main](https://user-images.githubusercontent.com/53562213/96367047-73249800-1186-11eb-9c37-f4735304d42b.png)
 ### 세부페이지
+![2](https://user-images.githubusercontent.com/53562213/111330054-f5bc6f80-86b2-11eb-9141-193f05f0b79a.PNG)
 ![1](https://user-images.githubusercontent.com/53562213/111329761-b5f58800-86b2-11eb-8cb9-37a79223cf70.PNG)
